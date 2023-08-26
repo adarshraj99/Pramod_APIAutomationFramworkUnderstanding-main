@@ -1,16 +1,15 @@
-# test Cases:
-# TC#1 - verify the status code, headers.
-# TC#2 - Verify the body -> Booking ID.
-# TC#3 - verify the JSON schema is valid.
-import json
+"""test Cases:
+TC#1 - verify the status code, headers.
+TC#2 - Verify the body -> Booking ID.
+TC#3 - verify the JSON schema is valid."""
 
+import json
 import pytest
 from src.constants.api_constants import base_url, url_create_booking
 from src.helpers.api_wrapper import post_request
 from src.helpers.payload_manager import create_booking_payload
 from src.helpers.utils import common_header
 from src.helpers.common_verifications import verify_key, verify_http_code
-
 
 class TestIntegration(object):
 
