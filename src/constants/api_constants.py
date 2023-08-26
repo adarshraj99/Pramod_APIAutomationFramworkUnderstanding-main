@@ -1,5 +1,5 @@
 # Add your constants here.
-
+# Keep the urls in different functions. As, like this we can run the functions with different environment urls.
 
 def base_url():
     return "https://restful-booker.herokuapp.com"

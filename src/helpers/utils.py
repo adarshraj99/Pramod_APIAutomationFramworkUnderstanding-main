@@ -10,3 +10,7 @@ def def_payload_auth():
     return data
 
 
+def common_header():
+    headers = {
+        "Content-Type": "application/json"
+    }
